@@ -1,0 +1,35 @@
+2일차
+
+ORA-00001: unique constraint = 중복으로 값을 넣을경우 발생(중복을 허용하지않음)
+commit; : 작성중인 임시 저장 공간의 데이터를 확정적으로 저장하겠다.
+rollback : 마지막 commit 시점까지 데이터를 되돌린다. *
+select * from [tb] : [tb] 안의 데이터 조회
+delete from [tb] : [tb] 안의 데이터 삭제
+insert into [tb] values() : [tb] 안에 데이터 삽입
+update [tb] set [column] : [tb]안의 [column] 값 변경
+create table [tb] : [tb]이름을 가진 테이블 생성
+alter table [tb]: [tb]의 속성내용을 수정하는 명령어
+	- modify([column] [type]): [column]을 [type]으로 변환
+	- drop column [column]: [column]을 삭제
+	- rename column [column] to [column2]: [column]을 [column2]로 변환
+drop : 무언가를 삭제하는 명령어 (-table, -user, etc...)
+
+
+3일차
+
+-- number(5, 2): 5: 전체 크기, 2: 소수점 크기, 3: 정수 크기
+-- round(x, y): x숫자를 y번째 소수점까지 구함(반올림o)
+-- trunc(x, y): x숫자를 y번째 소수점까지 구함(반올림x)
+-- mod(x, y): x%y의 값
+-- upper(): 모든 문자를 대문자로 변환
+-- lower(): 모든 문자를 소문자로 변환
+-- initcap(): 모든 문자의 첫 번째(공백 다음) 문자를 대문자로 변환
+
+
+4일차
+
+-- sum(): 튜플의 합을 구함
+-- avg(): 튜플의 평균을 구함
+-- max(): 튜플의 최댓값을 구함
+-- min(): 튜플의 최솟값을 구함
+-- count(): 튜플의 갯수를 구함(null값은 배제)
